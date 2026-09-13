@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four Years, One Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- PERSISTENT CINEMATIC CHROME (stays on screen)  -->
+<!-- ============================================= -->
+<div class="letterbox letterbox-top" aria-hidden="true"></div>
+<div class="letterbox letterbox-bottom" aria-hidden="true"></div>
+<div class="grain-overlay" aria-hidden="true"></div>
+<canvas id="dust-canvas" aria-hidden="true"></canvas>
+<canvas id="confetti-pile-canvas" aria-hidden="true"></canvas>
+
+<!-- ============================================= -->
+<!-- INTRO / TITLE CARD                             -->
+<!-- ============================================= -->
+<section id="intro" class="intro-screen">
+  <div class="reel-marks" aria-hidden="true">
+    <span>●</span><span>●</span><span>●</span><span>●</span>
+  </div>
+  <p class="intro-kicker">a film in four reels</p>
+  <!-- EDIT ME: change the title below to whatever you'd like the "movie" to be called -->
+  <h1 class="film-title">Coolest Bande,<br>Ki Kahani</h1>
+  <!-- EDIT ME: put your name here -->
+  <p class="intro-credit">written &amp; directed by <span class="credit-name">Teri bakwas sun ne vali ladki</span></p>
+  <button id="start-btn" type="button">
+    <span class="play-icon">▶</span> press play
+  </button>
+  <p class="intro-hint">best with sound on</p>
+</section>
+
+<main id="film-body">
+
+  <!-- ============================================= -->
+  <!-- REEL 01 — THE BEGINNING                        -->
+  <!-- ============================================= -->
+  <section class="chapter chapter-01" id="chapter-1" data-parallax>
+    <div class="timestamp" data-timestamp>REEL 01 · 00:00:04:17</div>
+    <div class="chapter-frame">
+      <p class="roman-numeral" aria-hidden="true">I</p>
+      <h2 class="chapter-title">The Beginning</h2>
+
+      <p class="typewriter-line" data-typewriter="Four years ago...">Four years ago...</p>
+
+      <div class="narration-block reveal">
+        <!--
+          EDIT ME — Chapter I
+          Tell the real story of how you two met, four years ago.
+          Keep it short and specific — one or two real moments land harder
+          than a long summary. Replace everything inside this <p>.
+        -->
+        <p class="narration">
+         from the time we started talking you know mujhe nahi laga tha ki hum itne acche dost
+          banega aur abhi bhi baat kar rahe honge par dekho hum abhi bhi pehle jaise hai bss thode 
+          se alag huye hai baki toh mujhe nahi lagta ki kuch change hua ho hai na aur toh bss mein 
+          zyada nahi bolungi varna tu zyada emotional ho jayega hihihi ;)
+        </p>
+      </div>
+
+      <div class="handwritten-note reveal" aria-hidden="false">
+        <!-- EDIT ME: a short handwritten-style aside, like a margin note -->
+        <p>neither of us knew what was coming next</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="film-strip" aria-hidden="true">
+    <div class="film-strip-track"></div>
+  </div>
+
+  <!-- ============================================= -->
+  <!-- REEL 02 — THE CHAOS                            -->
+  <!-- ============================================= -->
+  <section class="chapter chapter-02" id="chapter-2" data-parallax>
+    <div class="timestamp" data-timestamp>REEL 02 · 00:14:08:03</div>
+    <div class="chapter-frame">
+      <p class="roman-numeral" aria-hidden="true">II</p>
+      <h2 class="chapter-title">The Chaos</h2>
+
+      <p class="narration reveal">
+        <!-- Even though hum do saal se nahi mile i feel ki jab bhi humari baatein hoti hai ki 
+               hum saath mein baith kar baatein kar rahe hai -->
+        
+      </p>
+
+      <div class="memory-cards">
+        <div class="memory-card reveal" data-tilt="-4">
+          <span class="memory-tag">on the pitch</span>
+          <!-- EDIT ME: the football memory -->
+          <p>tujhe pata hai some or other how i remember woh teri football ki kahaniya
+                kaise tune goals mare hai aur uss time pe joh tu football ke liye crazyy tha !!</p>
+        </div>
+        <div class="memory-card reveal" data-tilt="3">
+          <span class="memory-tag">the JEE years</span>
+          <!-- EDIT ME: the JEE memory -->
+          <p>Just so you know you are not alone in your jee grind okayyy ?!! 
+                i am supporting and cheering you from the backgrounds !!</p>
+        </div>
+        <div class="memory-card reveal sticky-note" data-tilt="-2">
+          <span class="memory-tag">only we'd get this</span>
+          <!-- EDIT ME: an inside joke, just a fragment/phrase is fine -->
+          <p>vaise do you remember the notes you and jansi used to share in 9th 
+                 i mean uss time kya crazyy chiz ki thi tum logo ne !!
+                 pakde jana koi darr hi nahi tha aur aur do you remember those sapne joh jansi ko aye teh !!
+                 mujhe abhi bhi soch ke hasi ati hai yarrr !! </p>
+        </div>
+      </div>
+
+      <h3 class="fragments-heading reveal">things that were always playing in the background</h3>
+      <p class="fragments-subheading reveal">a small archive, not a playlist</p>
+
+      <!--
+        EDIT ME — Memory Fragments
+        Replace the artist name and note for each fragment.
+        Add or remove .fragment divs freely — the layout adapts automatically.
+        Keep the "why" line short and personal, like a caption scrawled on a photo.
+      -->
+      <div class="fragments-archive">
+        <div class="fragment reveal" data-tilt="-6">
+          <span class="fragment-artist">sombr</span>
+          <span class="fragment-note">i mean this guy is like kya song banata hai </span>
+        </div>
+        <div class="fragment reveal" data-tilt="4">
+          <span class="fragment-artist">Ed Sheeran - Perfect</span>
+          <span class="fragment-note">yaad hai hum call pe teh kuch 10th mein ig aur hum yeh gaa  rahe teh 
+What a memory re !!</span>
+        </div>
+        <div class="fragment reveal" data-tilt="-3">
+          <span class="fragment-artist">Saudebaazi</span>
+          <span class="fragment-note">stuck in our heads</span>
+        </div>
+        <div class="fragment reveal" data-tilt="5">
+          <span class="fragment-artist">ishq di faaniyar</span>
+          <span class="fragment-note">this song is really underrated man !!
+bohot mast song hai yeh !!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="film-strip" aria-hidden="true">
+    <div class="film-strip-track"></div>
+  </div>
+
+  <!-- ============================================= -->
+  <!-- REEL 03 — THE PEOPLE WE BECAME                 -->
+  <!-- ============================================= -->
+  <section class="chapter chapter-03" id="chapter-3" data-parallax>
+    <div class="timestamp" data-timestamp>REEL 03 · 00:31:52:11</div>
+    <div class="chapter-frame">
+      <p class="roman-numeral" aria-hidden="true">III</p>
+      <h2 class="chapter-title">The People We Became</h2>
+
+      <div class="polaroid-wrap reveal">
+        <div class="polaroid" id="polaroid">
+          <div class="tape tape-left" aria-hidden="true"></div>
+          <div class="tape tape-right" aria-hidden="true"></div>
+          <div class="polaroid-photo">
+            <!--
+              PHOTO: put your photo file in /assets/ and name it photo.jpg
+              (or change the filename below to match yours)
+            -->
+            <img src="assets/photo.jpg" alt="The two of us" onerror="this.parentElement.classList.add('photo-missing')">
+            <div class="photo-missing-label">drop your photo in assets/photo.jpg</div>
+          </div>
+          <!-- EDIT ME: the handwritten caption under the photo -->
+          <p class="polaroid-caption">humari pehli navratri jab hum like parth institute ke premises se bahar kabhi mile hai na ?!! </p>
+        </div>
+      </div>
+
+      <div class="letter reveal">
+        <p class="letter-heading">a letter, four years in the making</p>
+        <!--
+          EDIT ME — The Friendship Letter
+          This is the heart of the site. Write it however you actually would.
+          Line breaks and paragraphs are preserved — just write naturally.
+        -->
+        <div class="letter-body">
+          <p>Mishra ji yeh apke liye,</p>
+          <p>Haan hum shyad se nahi mile do saal se 
+aur haan shyd se hum roz baat na karte ho 
+par hum dono ki dosti vaisi ki vaisi hi hai 
+joh do saal pehle thi 
+aur vasi ki vaisi hi rahegi !! 
+vaise mera paas zyada toh kuch hai nahi ismein likhne ke liye 
+par mein itna zaroor kahungi ki adi tujh jaisa insaan sabko nahimilna chahiye kyuki 
+i believe log itne selfish ho jayenge ki tu mera dost nahi rahega
+isliye mein selfish hokar kahungi ki tujh jaisa dost sabko nahi milna chahiye
+aur toh baki kuch nahi hai tu bss apna yeh 18th birthday dhum dham se mana !! 
+aur tu jaisa hai vaisa hi sahi - matlab ki thoda sa bhondu aur thoda sa sanki aur ek accha insaan
+aur bss live your life jaise bhi aur koi kuch bole toh mujhe batana mein do char thop dungi unko sidha kaan ke niche ;)
+Btw once again 
+WISHING YOU THE HAPPIESTT AND THE SWEETEST 18TH BIRTHDAYYY OF YOUR LIFEEE !! .]</p>
+          <p>[~ Shah]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="film-strip" aria-hidden="true">
+    <div class="film-strip-track"></div>
+  </div>
+
+  <!-- ============================================= -->
+  <!-- REEL 04 — ANOTHER YEAR (the reveal)            -->
+  <!-- ============================================= -->
+  <section class="chapter chapter-04" id="chapter-4" data-parallax>
+    <div class="timestamp" data-timestamp>REEL 04 · 00:44:00:00</div>
+    <div class="chapter-frame">
+      <p class="roman-numeral" aria-hidden="true">IV</p>
+      <h2 class="chapter-title">Another Year</h2>
+
+      <p class="narration reveal build-line">and just like that —</p>
+
+      <div class="birthday-reveal">
+        <div class="balloons" id="balloons" aria-hidden="true"></div>
+        <!-- EDIT ME: his name -->
+        <h3 class="birthday-headline">Happiesttt Birthdaaayyy,<br><span id="friend-name">ADIIIII !!!</span></h3>
+        <!-- EDIT ME: the final message -->
+        <p class="birthday-message">
+         And just like that we completed four years of our friendship haan humaare bich mein thode jaghde huye but voh toh chalta hai difference of opinions re but this four years have been great while having you as my friend joh meri har bakwaas sun leta hai!! 
+So a huge thanks for being my safespace:)
+And this birthday I wish that you have the happiest year ahead and all your wishes come true 
+          aur haan bhai padhai ke saath apna bhi khyal rakhna !! :)
+        </p>
+        <!-- EDIT ME: your sign-off -->
+        <p class="final-signoff">~ Ishita</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================= -->
+<!-- PERSISTENT MUSIC PLAYER                        -->
+<!-- ============================================= -->
+<div id="music-player" class="music-player">
+  <button id="play-pause-btn" class="play-pause-btn" type="button" aria-label="Play or pause music">
+    <svg class="icon-play" viewBox="0 0 24 24" width="14" height="14"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>
+    <svg class="icon-pause" viewBox="0 0 24 24" width="14" height="14" style="display:none;"><path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"/></svg>
+  </button>
+  <div class="music-info">
+    <p class="music-title">Iktara</p>
+    <div class="music-progress-track" id="progress-track">
+      <div class="music-progress-fill" id="progress-fill"></div>
+    </div>
+  </div>
+  <span class="music-time" id="music-time">0:00</span>
+</div>
+
+<!-- EDIT ME: song.mp3 should live inside /assets/ -->
+<audio id="bg-audio" src="assets/song.mp3" preload="auto" loop></audio>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
